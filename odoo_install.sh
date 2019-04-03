@@ -2,7 +2,7 @@
 ################################################################################
 # Script para instalacao Odoo Debian 9
 # Author: Sidnei Brianti
-# wget 
+# wget https://raw.githubusercontent.com/scbrianti/InstallScript/12.0/odoo_install.sh
 # Place this content in it and then make the file executable:
 # sudo chmod +x odoo_install.sh
 # Execute the script to install Odoo:
@@ -27,9 +27,6 @@ OE_CONFIG="${OE_USER}-server"
 
 ##
 ###  WKHTMLTOPDF download links
-## === Ubuntu Trusty x64 & x32 === (for other distributions please replace these two links,
-## in order to have correct version of wkhtmltox installed, for a danger note refer to 
-## https://www.odoo.com/documentation/8.0/setup/install.html#deb ):
 WKHTMLTOX_X64=https://github.com/wkhtmltopdf/wkhtmltopdf/releases/download/0.12.5/wkhtmltox_0.12.5-1.stretch_amd64.deb
 WKHTMLTOX_X32=https://github.com/wkhtmltopdf/wkhtmltopdf/releases/download/0.12.5/wkhtmltox_0.12.5-1.stretch_i386.deb
 
@@ -37,7 +34,6 @@ WKHTMLTOX_X32=https://github.com/wkhtmltopdf/wkhtmltopdf/releases/download/0.12.
 # Update Server
 #--------------------------------------------------
 echo -e "\n---- Update Server ----"
-# universe package is for Ubuntu 18.x
 sudo add-apt-repository universe
 sudo apt-get update
 sudo apt-get upgrade -y
@@ -67,7 +63,6 @@ sudo apt-get install python-pypdf2 python-dateutil python-feedparser python-ldap
 sudo pip3 install pypdf2 Babel passlib Werkzeug decorator python-dateutil pyyaml psycopg2 psutil html2text docutils lxml pillow reportlab ninja2 requests gdata XlsxWriter vobject python-openid pyparsing pydot mock mako Jinja2 ebaysdk feedparser xlwt psycogreen suds-jurko pytz pyusb greenlet xlrd chardet libsass
 
 echo -e "\n---- Install python libraries ----"
-# This is for compatibility with Ubuntu 16.04. Will work on 14.04, 15.04 and 16.04
 sudo apt-get install python3-suds
 
 echo -e "\n--- Install other required packages"
@@ -131,8 +126,6 @@ sudo git clone --depth 1 --branch $OE_VERSION https://github.com/xubiuit/odoo_we
 
 echo -e "\n---- Setting permissions on home folder ----"
 sudo chown -R $OE_USER:$OE_USER $OE_HOME/*
-
-
 
 echo -e "* Create server config file"
 
