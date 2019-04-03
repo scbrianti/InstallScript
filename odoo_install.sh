@@ -13,6 +13,8 @@ OE_USER="odoo"
 OE_HOME="/$OE_USER"
 OE_HOME_EXT="/$OE_USER/${OE_USER}-server"
 OE_EXTRA="$OE_HOME/extra"
+OE_ADDONS_PATH="$OE_HOME_EXT/addons,$OE_HOME/custom/addons"
+
 # The default port where this Odoo instance will run under (provided you use the command -c in the terminal)
 # Set to true if you want to install it, false if you don't need it or have it already installed.
 INSTALL_WKHTMLTOPDF="True"
