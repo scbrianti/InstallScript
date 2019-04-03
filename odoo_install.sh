@@ -136,6 +136,7 @@ sudo su root -c "printf '[options] \n; This is the password that allows database
 sudo su root -c "printf 'admin_passwd = ${OE_SUPERADMIN}\n' >> /etc/${OE_CONFIG}.conf"
 sudo su root -c "printf 'xmlrpc_port = ${OE_PORT}\n' >> /etc/${OE_CONFIG}.conf"
 sudo su root -c "printf 'logfile = /var/log/${OE_USER}/${OE_CONFIG}.log\n' >> /etc/${OE_CONFIG}.conf"
+sudo su root -c "printf 'addons_path = ${OE_ADDONS_PATH}\n' >> /etc/${OE_CONFIG}.conf"
 
 sudo chown $OE_USER:$OE_USER /etc/${OE_CONFIG}.conf
 sudo chmod 640 /etc/${OE_CONFIG}.conf
