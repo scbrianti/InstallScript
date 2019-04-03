@@ -1,6 +1,6 @@
 #!/bin/bash
 ################################################################################
-# Script for installing Odoo on Ubuntu 14.04, 15.04, 16.04 and 18.04 (could be used for other version too)
+# Script for installing Odoo on Debian 9
 # Author: Yenthe Van Ginneken
 #-------------------------------------------------------------------------------
 # This script will install Odoo on your Ubuntu 16.04 server. It can install multiple Odoo instances
@@ -36,8 +36,8 @@ OE_CONFIG="${OE_USER}-server"
 ## === Ubuntu Trusty x64 & x32 === (for other distributions please replace these two links,
 ## in order to have correct version of wkhtmltox installed, for a danger note refer to 
 ## https://www.odoo.com/documentation/8.0/setup/install.html#deb ):
-WKHTMLTOX_X64=https://downloads.wkhtmltopdf.org/0.12/0.12.1/wkhtmltox-0.12.1_linux-trusty-amd64.deb
-WKHTMLTOX_X32=https://downloads.wkhtmltopdf.org/0.12/0.12.1/wkhtmltox-0.12.1_linux-trusty-i386.deb
+WKHTMLTOX_X64=https://github.com/wkhtmltopdf/wkhtmltopdf/releases/download/0.12.5/wkhtmltox_0.12.5-1.stretch_amd64.deb
+WKHTMLTOX_X32=https://github.com/wkhtmltopdf/wkhtmltopdf/releases/download/0.12.5/wkhtmltox_0.12.5-1.stretch_i386.deb
 
 #--------------------------------------------------
 # Update Server
@@ -113,7 +113,7 @@ sudo chown $OE_USER:$OE_USER /var/log/$OE_USER
 # Install ODOO
 #--------------------------------------------------
 echo -e "\n==== Installing ODOO Server ===="
-sudo git clone --depth 1 --branch $OE_VERSION https://www.github.com/odoo/odoo $OE_HOME_EXT/
+sudo git clone --depth 1 --branch $OE_VERSION https://github.com/OCA/OCB $OE_HOME_EXT/
 
 if [ $IS_ENTERPRISE = "True" ]; then
     # Odoo Enterprise install!
