@@ -112,7 +112,7 @@ echo -e "\n---- Create Extra addons directory ----"
 sudo su $OE_USER -c "mkdir $OE_EXTRA"
 
 echo -e "\n==== Installing ODOO Extra Addons ===="
-sudo git clone --depth 1 --branch $OE_VERSION https://github.com/OCA/server-tools.git $OE_EXTRA/
+sudo git clone --depth 1 --branch $OE_VERSION https://github.com/OCA/server-tools.git $OE_EXTRA/server-tools
 sudo git clone --depth 1 --branch $OE_VERSION https://github.com/OCA/connector-telephony.git $OE_EXTRA/
 sudo git clone --depth 1 --branch $OE_VERSION https://github.com/OCA/web.git $OE_EXTRA/
 sudo git clone --depth 1 --branch $OE_VERSION https://github.com/OCA/partner-contact.git $OE_EXTRA/
