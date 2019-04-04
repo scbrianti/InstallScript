@@ -14,9 +14,9 @@ OE_HOME="/$OE_USER"
 OE_HOME_EXT="/$OE_USER/${OE_USER}-server"
 OE_EXTRA="$OE_HOME/extra"
 OE_ADDONS_PATH="$OE_HOME_EXT/addons,$OE_HOME/custom/addons,$OE_EXTRA/oca-server-tools/, \
-                $OE_EXTRA/oca-connector-telephone/,$OE_EXTRA/oca-web/,$OE_EXTRA/oca-partner-contact/, \
-                $OE_EXTRA/oca-crm/,$OE_EXTRA/oca-l10n-brazil/,$OE_EXTRA/openwork-backend_theme/, \
-                $OE_EXTRA/muk-it-muk_web/,$OE_EXTRA/xubiuit-odoo_web_login/"
+$OE_EXTRA/oca-connector-telephone/,$OE_EXTRA/oca-web/,$OE_EXTRA/oca-partner-contact/, \
+$OE_EXTRA/oca-crm/,$OE_EXTRA/oca-l10n-brazil/,$OE_EXTRA/openwork-backend_theme/, \
+$OE_EXTRA/muk-it-muk_web/,$OE_EXTRA/xubiuit-odoo_web_login/,$OE_EXTRA/tkoopen-tko-addons/"
 
 # The default port where this Odoo instance will run under (provided you use the command -c in the terminal)
 # Set to true if you want to install it, false if you don't need it or have it already installed.
@@ -63,7 +63,7 @@ sudo apt-get install wget git bzr python-pip gdebi-core -y
 echo -e "\n---- Install python packages ----"
 sudo apt-get install libxml2-dev libxslt1-dev zlib1g-dev -y
 sudo apt-get install libsasl2-dev libldap2-dev libssl-dev -y
-sudo apt-get install python-pypdf2 python-dateutil python-feedparser python-ldap python-libxslt1 python-lxml python-mako python-openid python-psycopg2 python-pybabel python-pychart python-pydot python-pyparsing python-reportlab python-simplejson python-tz python-vatnumber python-vobject python-webdav python-werkzeug python-xlwt python-yaml python-zsi python-docutils python-psutil python-mock python-unittest2 python-jinja2 python-pypdf python-decorator python-requests python-passlib python-pil -y
+sudo apt-get install python-dateutil python-feedparser python-ldap python-libxslt1 python-lxml python-mako python-openid python-psycopg2 python-pychart python-pydot python-pyparsing python-reportlab python-simplejson python-tz python-vatnumber python-vobject python-webdav python-werkzeug python-xlwt python-yaml python-zsi python-docutils python-psutil python-mock python-unittest2 python-jinja2 python-pypdf python-decorator python-requests python-passlib python-pil -y
 #sudo pip3 install pypdf2 Babel passlib Werkzeug decorator python-dateutil pyyaml psycopg2 psutil html2text docutils lxml pillow reportlab ninja2 requests gdata XlsxWriter vobject python-openid pyparsing pydot mock mako Jinja2 ebaysdk feedparser xlwt psycogreen suds-jurko pytz pyusb greenlet xlrd chardet libsass
 sudo pip3 install -r https://raw.githubusercontent.com/OCA/OCB/$OE_VERSION/requirements.txt 
 
@@ -127,6 +127,7 @@ sudo git clone --depth 1 --branch $OE_VERSION https://github.com/OCA/l10n-brazil
 sudo git clone --depth 1 --branch $OE_VERSION https://github.com/Openworx/backend_theme.git $OE_EXTRA/openwork-backend_theme/
 sudo git clone --depth 1 --branch $OE_VERSION https://github.com/muk-it/muk_web.git $OE_EXTRA/muk-it-muk_web/
 sudo git clone --depth 1 --branch $OE_VERSION https://github.com/xubiuit/odoo_web_login.git $OE_EXTRA/xubiuit-odoo_web_login/
+sudo git clone --depth 1 --branch $OE_VERSION https://gitlab.com/tkopen/tko-addons.git $OE_EXTRA/tkoopen-tko-addons/
 
 
 echo -e "\n---- Setting permissions on home folder ----"
