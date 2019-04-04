@@ -69,6 +69,8 @@ python-mako python-openid python-psycopg2 python-pychart python-pydot python-pyp
 python-simplejson python-tz python-vatnumber python-vobject python-webdav python-werkzeug python-xlwt \
 python-yaml python-zsi python-docutils python-psutil python-mock python-unittest2 python-jinja2 \
 python-decorator python-requests python-passlib python-pil -y
+
+echo -e "\n---- Install pip packages ----"
 sudo pip3 install -r https://raw.githubusercontent.com/OCA/OCB/$OE_VERSION/requirements.txt 
 
 echo -e "\n---- Install python libraries ----"
