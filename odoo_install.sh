@@ -18,7 +18,7 @@ $OE_EXTRA/oca-connector-telephone/,$OE_EXTRA/oca-web/,$OE_EXTRA/oca-partner-cont
 $OE_EXTRA/oca-crm/,$OE_EXTRA/oca-l10n-brazil/,$OE_EXTRA/openwork-backend_theme/,\
 $OE_EXTRA/muk-it-muk_web/,$OE_EXTRA/muk-it-muk_web/,$OE_EXTRA/muk-it-muk_docs/,\
 $OE_EXTRA/muk-it-muk_dms/,$OE_EXTRA/xubiuit-odoo_web_login/,$OE_EXTRA/tkoopen-tko-addons/,\
-$OE_EXTRA/oca-social/,$OE_EXTRA/hmrodrigues-odoo-apps/"
+$OE_EXTRA/oca-social/"
 
 # The default port where this Odoo instance will run under (provided you use the command -c in the terminal)
 # Set to true if you want to install it, false if you don't need it or have it already installed.
@@ -139,7 +139,6 @@ sudo git clone --depth 1 --branch $OE_VERSION https://github.com/muk-it/muk_dms.
 sudo git clone --depth 1 --branch $OE_VERSION https://github.com/xubiuit/odoo_web_login.git $OE_EXTRA/xubiuit-odoo_web_login/
 sudo git clone --depth 1 --branch $OE_VERSION https://gitlab.com/tkopen/tko-addons.git $OE_EXTRA/tkoopen-tko-addons/
 sudo git clone --depth 1 --branch $OE_VERSION https://github.com/OCA/social.git $OE_EXTRA/oca-social/
-sudo git clone --depth 1 --branch $OE_VERSION https://github.com/hmrodrigues/odoo-apps.git $OE_EXTRA/hmrodrigues-odoo-apps/
 
 
 echo -e "\n---- Setting permissions on home folder ----"
