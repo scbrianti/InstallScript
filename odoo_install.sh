@@ -17,8 +17,8 @@ OE_ADDONS_PATH="$OE_HOME_EXT/addons,$OE_HOME/custom/addons,$OE_EXTRA/oca-server-
 $OE_EXTRA/oca-connector-telephone/,$OE_EXTRA/oca-web/,$OE_EXTRA/oca-partner-contact/,\
 $OE_EXTRA/oca-crm/,$OE_EXTRA/oca-l10n-brazil/,$OE_EXTRA/openwork-backend_theme/,\
 $OE_EXTRA/muk-it-muk_web/,$OE_EXTRA/muk-it-muk_web/,$OE_EXTRA/muk-it-muk_docs/,\
-$OE_EXTRA/muk-it-muk_dms/,$OE_EXTRA/xubiuit-odoo_web_login/,$OE_EXTRA/tkoopen-tko-addons/,\
-$OE_EXTRA/oca-social/,$OE_EXTRA/tekcloud-web-interface/"
+$OE_EXTRA/muk-it-muk_dms/,$OE_EXTRA/muk-it-muk_base/,$OE_EXTRA/xubiuit-odoo_web_login/,\
+$OE_EXTRA/tkoopen-tko-addons/,$OE_EXTRA/oca-social/,$OE_EXTRA/tekcloud-web-interface/"
 
 # The default port where this Odoo instance will run under (provided you use the command -c in the terminal)
 # Set to true if you want to install it, false if you don't need it or have it already installed.
