@@ -15,10 +15,12 @@ OE_HOME_EXT="/$OE_USER/${OE_USER}-server"
 OE_EXTRA="$OE_HOME/extra"
 OE_ADDONS_PATH="$OE_HOME_EXT/addons,$OE_HOME/custom/addons,$OE_EXTRA/oca-server-tools/,\
 $OE_EXTRA/oca-connector-telephone/,$OE_EXTRA/oca-web/,$OE_EXTRA/oca-partner-contact/,\
-$OE_EXTRA/oca-crm/,$OE_EXTRA/oca-l10n-brazil/,$OE_EXTRA/openwork-backend_theme/,\
+$OE_EXTRA/oca-crm/,$OE_EXTRA/oca-l10n-brazil/,$OE_EXTRA/oca-helpdesk/,$OE_EXTRA/oca-social/,\
 $OE_EXTRA/muk-it-muk_web/,$OE_EXTRA/muk-it-muk_web/,$OE_EXTRA/muk-it-muk_docs/,\
-$OE_EXTRA/muk-it-muk_dms/,$OE_EXTRA/muk-it-muk_base/,$OE_EXTRA/xubiuit-odoo_web_login/,\
-$OE_EXTRA/tkoopen-tko-addons/,$OE_EXTRA/oca-social/,$OE_EXTRA/tekcloud-web-interface/"
+$OE_EXTRA/muk-it-muk_dms/,$OE_EXTRA/muk-it-muk_base/,$OE_EXTRA/muk-it-muk_bundles/,\
+$OE_EXTRA/muk-it-muk_misc/,$OE_EXTRA/muk-it-muk_quality/,$OE_EXTRA/muk-it-muk_website/,\
+$OE_EXTRA/xubiuit-odoo_web_login/,$OE_EXTRA/tkoopen-tko-addons/,\
+$OE_EXTRA/openwork-backend_theme/,$OE_EXTRA/tekcloud-web-interface/"
 
 # The default port where this Odoo instance will run under (provided you use the command -c in the terminal)
 # Set to true if you want to install it, false if you don't need it or have it already installed.
@@ -131,11 +133,16 @@ sudo git clone --depth 1 --branch $OE_VERSION https://github.com/OCA/web.git $OE
 sudo git clone --depth 1 --branch $OE_VERSION https://github.com/OCA/partner-contact.git $OE_EXTRA/oca-partner-contact/
 sudo git clone --depth 1 --branch $OE_VERSION https://github.com/OCA/crm.git $OE_EXTRA/oca-crm/
 sudo git clone --depth 1 --branch $OE_VERSION https://github.com/OCA/l10n-brazil.git $OE_EXTRA/oca-l10n-brazil/
+sudo git clone --depth 1 --branch $OE_VERSION https://github.com/OCA/helpdesk.git $OE_EXTRA/oca-helpdesk/
 sudo git clone --depth 1 --branch $OE_VERSION https://github.com/Openworx/backend_theme.git $OE_EXTRA/openwork-backend_theme/
 sudo git clone --depth 1 --branch $OE_VERSION https://github.com/muk-it/muk_base.git $OE_EXTRA/muk-it-muk_base/
 sudo git clone --depth 1 --branch $OE_VERSION https://github.com/muk-it/muk_web.git $OE_EXTRA/muk-it-muk_web/
 sudo git clone --depth 1 --branch $OE_VERSION https://github.com/muk-it/muk_docs.git $OE_EXTRA/muk-it-muk_docs/
 sudo git clone --depth 1 --branch $OE_VERSION https://github.com/muk-it/muk_dms.git $OE_EXTRA/muk-it-muk_dms/
+sudo git clone --depth 1 --branch $OE_VERSION https://github.com/muk-it/muk_bundles.git $OE_EXTRA/muk-it-muk_bundles/
+sudo git clone --depth 1 --branch $OE_VERSION https://github.com/muk-it/muk_misc.git $OE_EXTRA/muk-it-muk_misc/
+sudo git clone --depth 1 --branch $OE_VERSION https://github.com/muk-it/muk_quality.git $OE_EXTRA/muk-it-muk_quality/
+sudo git clone --depth 1 --branch $OE_VERSION https://github.com/muk-it/muk_website.git $OE_EXTRA/muk-it-muk_website/
 sudo git clone --depth 1 --branch $OE_VERSION https://github.com/xubiuit/odoo_web_login.git $OE_EXTRA/xubiuit-odoo_web_login/
 sudo git clone --depth 1 --branch $OE_VERSION https://gitlab.com/tkopen/tko-addons.git $OE_EXTRA/tkoopen-tko-addons/
 sudo git clone --depth 1 --branch $OE_VERSION https://github.com/OCA/social.git $OE_EXTRA/oca-social/
