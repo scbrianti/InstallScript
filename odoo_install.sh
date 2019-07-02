@@ -20,7 +20,7 @@ $OE_EXTRA/oca-server-auth/,$OE_EXTRA/oca-rest-framework/,\
 $OE_EXTRA/muk-it-muk_web/,$OE_EXTRA/muk-it-muk_web/,$OE_EXTRA/muk-it-muk_docs/,\
 $OE_EXTRA/muk-it-muk_dms/,$OE_EXTRA/muk-it-muk_base/,$OE_EXTRA/muk-it-muk_bundles/,\
 $OE_EXTRA/muk-it-muk_misc/,$OE_EXTRA/muk-it-muk_quality/,$OE_EXTRA/muk-it-muk_website/,\
-$OE_EXTRA/xubiuit-odoo_web_login/,$OE_EXTRA/tkoopen-tko-addons/,\
+$OE_EXTRA/xubiuit-odoo_web_login/,$OE_EXTRA/tkoopen-tko-addons/,$OE_EXTRA/debbabu-Lead_History/,\
 $OE_EXTRA/openwork-backend_theme/,$OE_EXTRA/tekcloud-web-interface/"
 
 # The default port where this Odoo instance will run under (provided you use the command -c in the terminal)
@@ -150,6 +150,7 @@ sudo git clone --depth 1 --branch $OE_VERSION https://github.com/muk-it/muk_webs
 sudo git clone --depth 1 --branch $OE_VERSION https://github.com/xubiuit/odoo_web_login.git $OE_EXTRA/xubiuit-odoo_web_login/
 sudo git clone --depth 1 --branch $OE_VERSION https://gitlab.com/tkopen/tko-addons.git $OE_EXTRA/tkoopen-tko-addons/
 sudo git clone --depth 1 --branch $OE_VERSION https://gitlab.com/tekcloud/web-interface.git $OE_EXTRA/tekcloud-web-interface/
+sudo git clone --depth 1 --branch $OE_VERSION https://github.com/debbabu/Lead-History.git $OE_EXTRA/debbabu-Lead_History/
 
 
 echo -e "\n---- Setting permissions on home folder ----"
