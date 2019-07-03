@@ -18,7 +18,7 @@ $OE_EXTRA/oca-connector-telephone/,$OE_EXTRA/oca-web/,$OE_EXTRA/oca-partner-cont
 $OE_EXTRA/oca-crm/,$OE_EXTRA/oca-l10n-brazil/,$OE_EXTRA/oca-helpdesk/,$OE_EXTRA/oca-social/,\
 $OE_EXTRA/oca-server-auth/,$OE_EXTRA/oca-rest-framework/,\
 $OE_EXTRA/muk-it-muk_web/,$OE_EXTRA/muk-it-muk_web/,$OE_EXTRA/muk-it-muk_docs/,\
-$OE_EXTRA/muk-it-muk_dms/,$OE_EXTRA/muk-it-muk_base/,\
+$OE_EXTRA/muk-it-muk_dms/,$OE_EXTRA/muk-it-muk_base/,$OE_EXTRA/onesteinbv-addons-onestein/,\
 $OE_EXTRA/muk-it-muk_misc/,$OE_EXTRA/muk-it-muk_quality/,$OE_EXTRA/muk-it-muk_website/,\
 $OE_EXTRA/xubiuit-odoo_web_login/,$OE_EXTRA/tkoopen-tko-addons/,$OE_EXTRA/debbabu-Lead_History/,\
 $OE_EXTRA/openwork-backend_theme/,$OE_EXTRA/tekcloud-web-interface/,$OE_EXTRA/mustafirus-odoo_addons/"
@@ -151,6 +151,7 @@ sudo git clone --depth 1 --branch $OE_VERSION https://gitlab.com/tkopen/tko-addo
 sudo git clone --depth 1 --branch $OE_VERSION https://gitlab.com/tekcloud/web-interface.git $OE_EXTRA/tekcloud-web-interface/
 sudo git clone --depth 1 --branch $OE_VERSION https://github.com/debbabu/Lead-History.git $OE_EXTRA/debbabu-Lead_History/
 sudo git clone --depth 1 --branch $OE_VERSION https://github.com/mustafirus/odoo_addons.git $OE_EXTRA/mustafirus-odoo_addons/
+sudo git clone --depth 1 --branch $OE_VERSION https://github.com/onesteinbv/addons-onestein.git $OE_EXTRA/onesteinbv-addons-onestein/
 
 
 echo -e "\n---- Setting permissions on home folder ----"
