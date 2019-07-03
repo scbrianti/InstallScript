@@ -21,7 +21,7 @@ $OE_EXTRA/muk-it-muk_web/,$OE_EXTRA/muk-it-muk_web/,$OE_EXTRA/muk-it-muk_docs/,\
 $OE_EXTRA/muk-it-muk_dms/,$OE_EXTRA/muk-it-muk_base/,\
 $OE_EXTRA/muk-it-muk_misc/,$OE_EXTRA/muk-it-muk_quality/,$OE_EXTRA/muk-it-muk_website/,\
 $OE_EXTRA/xubiuit-odoo_web_login/,$OE_EXTRA/tkoopen-tko-addons/,$OE_EXTRA/debbabu-Lead_History/,\
-$OE_EXTRA/openwork-backend_theme/,$OE_EXTRA/tekcloud-web-interface/"
+$OE_EXTRA/openwork-backend_theme/,$OE_EXTRA/tekcloud-web-interface/,$OE_EXTRA/mustafirus-odoo_addons/"
 
 # The default port where this Odoo instance will run under (provided you use the command -c in the terminal)
 # Set to true if you want to install it, false if you don't need it or have it already installed.
@@ -150,6 +150,7 @@ sudo git clone --depth 1 --branch $OE_VERSION https://github.com/xubiuit/odoo_we
 sudo git clone --depth 1 --branch $OE_VERSION https://gitlab.com/tkopen/tko-addons.git $OE_EXTRA/tkoopen-tko-addons/
 sudo git clone --depth 1 --branch $OE_VERSION https://gitlab.com/tekcloud/web-interface.git $OE_EXTRA/tekcloud-web-interface/
 sudo git clone --depth 1 --branch $OE_VERSION https://github.com/debbabu/Lead-History.git $OE_EXTRA/debbabu-Lead_History/
+sudo git clone --depth 1 --branch $OE_VERSION https://github.com/mustafirus/odoo_addons.git $OE_EXTRA/mustafirus-odoo_addons/
 
 
 echo -e "\n---- Setting permissions on home folder ----"
