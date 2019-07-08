@@ -16,7 +16,7 @@ OE_EXTRA="$OE_HOME/extra"
 OE_ADDONS_PATH="$OE_HOME_EXT/addons,$OE_HOME/custom/addons,$OE_EXTRA/oca-server-tools/,\
 $OE_EXTRA/oca-connector-telephone/,$OE_EXTRA/oca-web/,$OE_EXTRA/oca-partner-contact/,\
 $OE_EXTRA/oca-crm/,$OE_EXTRA/oca-l10n-brazil/,$OE_EXTRA/oca-helpdesk/,$OE_EXTRA/oca-social/,\
-$OE_EXTRA/oca-server-auth/,$OE_EXTRA/oca-rest-framework/,\
+$OE_EXTRA/oca-server-auth/,$OE_EXTRA/oca-rest-framework/,$OE_EXTRA/CybroOdoo-CybroAddons/,\
 $OE_EXTRA/muk-it-muk_web/,$OE_EXTRA/muk-it-muk_web/,$OE_EXTRA/muk-it-muk_docs/,\
 $OE_EXTRA/muk-it-muk_dms/,$OE_EXTRA/muk-it-muk_base/,$OE_EXTRA/onesteinbv-addons-onestein/,\
 $OE_EXTRA/muk-it-muk_misc/,$OE_EXTRA/muk-it-muk_quality/,$OE_EXTRA/muk-it-muk_website/,\
@@ -152,6 +152,7 @@ sudo git clone --depth 1 --branch $OE_VERSION https://gitlab.com/tekcloud/addons
 sudo git clone --depth 1 --branch $OE_VERSION https://github.com/debbabu/Lead-History.git $OE_EXTRA/debbabu-Lead_History/
 sudo git clone --depth 1 --branch $OE_VERSION https://github.com/mustafirus/odoo_addons.git $OE_EXTRA/mustafirus-odoo_addons/
 sudo git clone --depth 1 --branch $OE_VERSION https://github.com/onesteinbv/addons-onestein.git $OE_EXTRA/onesteinbv-addons-onestein/
+sudo git clone --depth 1 --branch $OE_VERSION https://github.com/CybroOdoo/CybroAddons.git $OE_EXTRA/CybroOdoo-CybroAddons/
 
 
 echo -e "\n---- Setting permissions on home folder ----"
