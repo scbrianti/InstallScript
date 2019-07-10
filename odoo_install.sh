@@ -48,7 +48,7 @@ sudo apt-get update
 sudo apt-get upgrade -y
 
 #--------------------------------------------------
-# Install PostgreSQL Server
+# Install PostgreSQL 11 Server
 #--------------------------------------------------
 echo -e "\n---- Install PostgreSQL Server ----"
 wget -q https://www.postgresql.org/media/keys/ACCC4CF8.asc -O - | sudo apt-key add -
