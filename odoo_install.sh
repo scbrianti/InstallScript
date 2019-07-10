@@ -23,22 +23,20 @@ $OE_EXTRA/muk-it-muk_misc/,$OE_EXTRA/muk-it-muk_quality/,$OE_EXTRA/muk-it-muk_we
 $OE_EXTRA/xubiuit-odoo_web_login/,$OE_EXTRA/tekcloud-addons/,$OE_EXTRA/debbabu-Lead_History/,\
 $OE_EXTRA/openwork-backend_theme/,$OE_EXTRA/tekcloud-web-interface/,$OE_EXTRA/mustafirus-odoo_addons/"
 
-# The default port where this Odoo instance will run under (provided you use the command -c in the terminal)
-# Set to true if you want to install it, false if you don't need it or have it already installed.
+
 INSTALL_WKHTMLTOPDF="True"
-# Set the default Odoo port (you still have to use -c /etc/odoo-server.conf for example to use this.)
+
+# Odoo Port
 OE_PORT="8069"
-# Choose the Odoo version which you want to install. For example: 12.0, 11.0, 10.0 or saas-18. When using 'master' the master version will be installed.
-# IMPORTANT! This script contains extra libraries that are specifically needed for Odoo 12.0
+# Odoo Version
 OE_VERSION="12.0"
-# set the superadmin password
+
 OE_SUPERADMIN="admin"
 OE_CONFIG="${OE_USER}-server"
 
 #PostgreSQL Version
 OE_POSTGRESQL_VERSION="10"
 
-##
 ###  WKHTMLTOPDF download links
 WKHTMLTOX_X64=https://github.com/wkhtmltopdf/wkhtmltopdf/releases/download/0.12.5/wkhtmltox_0.12.5-1.stretch_amd64.deb
 WKHTMLTOX_X32=https://github.com/wkhtmltopdf/wkhtmltopdf/releases/download/0.12.5/wkhtmltox_0.12.5-1.stretch_i386.deb
