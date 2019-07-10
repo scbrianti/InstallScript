@@ -35,6 +35,9 @@ OE_VERSION="12.0"
 OE_SUPERADMIN="admin"
 OE_CONFIG="${OE_USER}-server"
 
+#PostgreSQL Version
+OE_POSTGRESQL_VERSION="10"
+
 ##
 ###  WKHTMLTOPDF download links
 WKHTMLTOX_X64=https://github.com/wkhtmltopdf/wkhtmltopdf/releases/download/0.12.5/wkhtmltox_0.12.5-1.stretch_amd64.deb
@@ -48,12 +51,13 @@ sudo apt-get update
 sudo apt-get upgrade -y
 
 #--------------------------------------------------
-# Install PostgreSQL 11 Server
+# Install PostgreSQL Server
 #--------------------------------------------------
 echo -e "\n---- Install PostgreSQL Server ----"
 wget -q https://www.postgresql.org/media/keys/ACCC4CF8.asc -O - | sudo apt-key add -
+sudo sh -c 'echo "deb http://apt.postgresql.org/pub/repos/apt/ stretch-pgdg main" >> /etc/apt/sources.list.d/pgdg.list'
 sudo apt-get update
-sudo apt-get install postgresql -y
+sudo apt-get install postgresql-${OE_POSTGRESQL_VERSION} -y
 
 echo -e "\n---- Creating the ODOO PostgreSQL User  ----"
 sudo su - postgres -c "createuser -s $OE_USER" 2> /dev/null || true
