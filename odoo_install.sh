@@ -21,7 +21,8 @@ $OE_EXTRA/muk-it-muk_web/,$OE_EXTRA/muk-it-muk_web/,$OE_EXTRA/muk-it-muk_docs/,\
 $OE_EXTRA/muk-it-muk_dms/,$OE_EXTRA/muk-it-muk_base/,$OE_EXTRA/onesteinbv-addons-onestein/,\
 $OE_EXTRA/muk-it-muk_misc/,$OE_EXTRA/muk-it-muk_quality/,$OE_EXTRA/muk-it-muk_website/,\
 $OE_EXTRA/xubiuit-odoo_web_login/,$OE_EXTRA/tekcloud-addons/,$OE_EXTRA/debbabu-Lead_History/,\
-$OE_EXTRA/openwork-backend_theme/,$OE_EXTRA/tekcloud-web-interface/,$OE_EXTRA/mustafirus-odoo_addons/"
+$OE_EXTRA/openwork-backend_theme/,$OE_EXTRA/tekcloud-web-interface/,$OE_EXTRA/mustafirus-odoo_addons/,\
+$OE_EXTRA/odoomates-odooapps/"
 
 
 INSTALL_WKHTMLTOPDF="True"
@@ -156,7 +157,8 @@ sudo git clone --depth 1 --branch $OE_VERSION https://gitlab.com/tekcloud/addons
 sudo git clone --depth 1 --branch $OE_VERSION https://github.com/debbabu/Lead-History.git $OE_EXTRA/debbabu-Lead_History/
 sudo git clone --depth 1 --branch $OE_VERSION https://github.com/mustafirus/odoo_addons.git $OE_EXTRA/mustafirus-odoo_addons/
 sudo git clone --depth 1 --branch $OE_VERSION https://github.com/onesteinbv/addons-onestein.git $OE_EXTRA/onesteinbv-addons-onestein/
-sudo git clone --depth 1 --branch $OE_VERSION https://github.com/CybroOdoo/CybroAddons.git $OE_EXTRA/CybroOdoo-CybroAddons/
+sudo git clone --depth 1 --branch $OE_VERSION https://github.com/CybroOdoo/CybroAddons.git $OE_EXTRA/cybroOdoo-cybroAddons/
+sudo git clone --depth 1 --branch $OE_VERSION https://github.com/odoomates/odooapps.git $OE_EXTRA/odoomates-odooapps/
 
 
 echo -e "\n---- Setting permissions on home folder ----"
