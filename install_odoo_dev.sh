@@ -14,7 +14,7 @@ OE_HOME="/$OE_USER"
 OE_HOME_EXT="/$OE_USER/${OE_USER}-server"
 OE_EXTRA="$OE_HOME/extra"
 OE_ADDONS_PATH="$OE_HOME_EXT/addons,$OE_HOME/custom/addons"
-
+OE_CONF="/$OE_HOME/conf"
 
 INSTALL_WKHTMLTOPDF="True"
 
@@ -157,14 +157,14 @@ sudo chown -R $OE_USER:$OE_USER $OE_HOME/*
 
 echo -e "* Create server config file"
 
-sudo touch /etc/${OE_CONFIG}.conf
+sudo touch ${OE_CONF}/${OE_CONFIG}.conf
 echo -e "* Creating server config file"
-sudo su root -c "printf '[options] \n; This is the password that allows database operations:\n' >> /etc/${OE_CONFIG}.conf"
-sudo su root -c "printf 'admin_passwd = ${OE_SUPERADMIN}\n' >> /etc/${OE_CONFIG}.conf"
-sudo su root -c "printf 'xmlrpc_port = ${OE_PORT}\n' >> /etc/${OE_CONFIG}.conf"
-sudo su root -c "printf 'logfile = /var/log/${OE_USER}/${OE_CONFIG}.log\n' >> /etc/${OE_CONFIG}.conf"
-sudo su root -c "printf 'addons_path = ${OE_ADDONS_PATH}\n' >> /etc/${OE_CONFIG}.conf"
+sudo su root -c "printf '[options] \n; This is the password that allows database operations:\n' >> ${OE_CONF}/${OE_CONFIG}.conf"
+sudo su root -c "printf 'admin_passwd = ${OE_SUPERADMIN}\n' >> ${OE_CONF}/${OE_CONFIG}.conf
+sudo su root -c "printf 'xmlrpc_port = ${OE_PORT}\n' >> ${OE_CONF}/${OE_CONFIG}.conf
+sudo su root -c "printf 'logfile = /var/log/${OE_USER}/${OE_CONFIG}.log\n' >> ${OE_CONF}/${OE_CONFIG}.conf
+sudo su root -c "printf 'addons_path = ${OE_ADDONS_PATH}\n' >> ${OE_CONF}/${OE_CONFIG}.conf
 
-sudo chown $OE_USER:$OE_USER /etc/${OE_CONFIG}.conf
-sudo chmod 640 /etc/${OE_CONFIG}.conf
+sudo chown $OE_USER:$OE_USER ${OE_CONF}/${OE_CONFIG}.conf
+sudo chmod 640 ${OE_CONF}/${OE_CONFIG}.conf
 
