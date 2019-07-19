@@ -14,7 +14,6 @@ OE_HOME="/$OE_USER"
 OE_HOME_EXT="/$OE_USER/${OE_USER}-server"
 OE_EXTRA="$OE_HOME/extra"
 OE_ADDONS_PATH="$OE_HOME_EXT/addons,$OE_HOME/custom/addons"
-OE_CONF="$OE_HOME/conf"
 
 INSTALL_WKHTMLTOPDF="True"
 
