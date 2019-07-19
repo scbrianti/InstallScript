@@ -118,6 +118,7 @@ sudo git clone --depth 1 --branch $OE_VERSION https://github.com/OCA/OCB $OE_HOM
 
 echo -e "\n---- Create custom module directory ----"
 sudo su $OE_USER -c "mkdir $OE_HOME/custom"
+sudo su $OE_USER -c "mkdir $OE_HOME/conf"
 sudo su $OE_USER -c "mkdir $OE_HOME/custom/addons"
 
 echo -e "\n---- Create Extra addons directory ----"
@@ -156,15 +157,15 @@ echo -e "\n---- Setting permissions on home folder ----"
 sudo chown -R $OE_USER:$OE_USER $OE_HOME/*
 
 echo -e "* Create server config file"
-sudo mkdir ${OE_CONF}
-sudo touch ${OE_CONF}/${OE_CONFIG}.conf
-echo -e "* Creating server config file"
-sudo su root -c "printf '[options] \n; This is the password that allows database operations:\n' >> ${OE_CONF}/${OE_CONFIG}.conf"
-sudo su root -c "printf 'admin_passwd = ${OE_SUPERADMIN}\n' >> ${OE_CONF}/${OE_CONFIG}.conf
-sudo su root -c "printf 'xmlrpc_port = ${OE_PORT}\n' >> ${OE_CONF}/${OE_CONFIG}.conf
-sudo su root -c "printf 'logfile = /var/log/${OE_USER}/${OE_CONFIG}.log\n' >> ${OE_CONF}/${OE_CONFIG}.conf
-sudo su root -c "printf 'addons_path = ${OE_ADDONS_PATH}\n' >> ${OE_CONF}/${OE_CONFIG}.conf
 
-sudo chown $OE_USER:$OE_USER ${OE_CONF}/${OE_CONFIG}.conf
-sudo chmod 640 ${OE_CONF}/${OE_CONFIG}.conf
+sudo touch ${OE_HOME}/conf/${OE_CONFIG}.conf
+echo -e "* Creating server config file"
+sudo su root -c "printf '[options] \n; This is the password that allows database operations:\n' >> ${OE_HOME}/conf/${OE_CONFIG}.conf
+sudo su root -c "printf 'admin_passwd = ${OE_SUPERADMIN}\n' >> ${OE_HOME}/conf/${OE_CONFIG}.conf
+sudo su root -c "printf 'xmlrpc_port = ${OE_PORT}\n' >> ${OE_HOME}/conf/${OE_CONFIG}.conf
+sudo su root -c "printf 'logfile = /var/log/${OE_USER}/${OE_CONFIG}.log\n' >> ${OE_HOME}/conf/${OE_CONFIG}.conf
+sudo su root -c "printf 'addons_path = ${OE_ADDONS_PATH}\n' >> ${OE_HOME}/conf/${OE_CONFIG}.conf
+
+sudo chown $OE_USER:$OE_USER ${OE_HOME}/conf/${OE_CONFIG}.conf
+sudo chmod 640 ${OE_HOME}/conf/${OE_CONFIG}.conf
 
