@@ -151,20 +151,9 @@ sudo git clone --depth 1 --branch $OE_VERSION https://github.com/onesteinbv/addo
 sudo git clone --depth 1 --branch $OE_VERSION https://github.com/CybroOdoo/CybroAddons.git $OE_EXTRA/cybroOdoo-cybroAddons/
 sudo git clone --depth 1 --branch $OE_VERSION https://github.com/odoomates/odooapps.git $OE_EXTRA/odoomates-odooapps/
 sudo git clone --depth 1 --branch $OE_VERSION https://github.com/Smile-SA/odoo_addons.git $OE_EXTRA/smile-sa-odoo_addons/
+sudo git clone --depth 1 --branch $OE_VERSION https://github.com/SythilTech/Odoo.git $OE_EXTRA/sythilech-odoo/
 
 echo -e "\n---- Setting permissions on home folder ----"
 sudo chown -R $OE_USER:$OE_USER $OE_HOME/*
 
-echo -e "* Create server config file"
-
-sudo touch ${OE_HOME}/conf/${OE_CONFIG}.conf
-echo -e "* Creating server config file"
-sudo su odoo -c "printf '[options] \n; This is the password that allows database operations:\n' >> ${OE_HOME}/conf/${OE_CONFIG}.conf
-sudo su odoo -c "printf 'admin_passwd = ${OE_SUPERADMIN}\n' >> ${OE_HOME}/conf/${OE_CONFIG}.conf
-sudo su odoo -c "printf 'xmlrpc_port = ${OE_PORT}\n' >> ${OE_HOME}/conf/${OE_CONFIG}.conf
-sudo su odoo -c "printf 'logfile = /var/log/${OE_USER}/${OE_CONFIG}.log\n' >> ${OE_HOME}/conf/${OE_CONFIG}.conf
-sudo su odoo -c "printf 'addons_path = ${OE_ADDONS_PATH}\n' >> ${OE_HOME}/conf/${OE_CONFIG}.conf
-
-sudo chown $OE_USER:$OE_USER ${OE_HOME}/conf/${OE_CONFIG}.conf
-sudo chmod 640 ${OE_HOME}/conf/${OE_CONFIG}.conf
 
