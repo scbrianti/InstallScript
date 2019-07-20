@@ -159,11 +159,11 @@ echo -e "* Create server config file"
 
 sudo touch ${OE_HOME}/conf/${OE_CONFIG}.conf
 echo -e "* Creating server config file"
-sudo su root -c "printf '[options] \n; This is the password that allows database operations:\n' >> ${OE_HOME}/conf/${OE_CONFIG}.conf
-sudo su root -c "printf 'admin_passwd = ${OE_SUPERADMIN}\n' >> ${OE_HOME}/conf/${OE_CONFIG}.conf
-sudo su root -c "printf 'xmlrpc_port = ${OE_PORT}\n' >> ${OE_HOME}/conf/${OE_CONFIG}.conf
-sudo su root -c "printf 'logfile = /var/log/${OE_USER}/${OE_CONFIG}.log\n' >> ${OE_HOME}/conf/${OE_CONFIG}.conf
-sudo su root -c "printf 'addons_path = ${OE_ADDONS_PATH}\n' >> ${OE_HOME}/conf/${OE_CONFIG}.conf
+sudo su odoo -c "printf '[options] \n; This is the password that allows database operations:\n' >> ${OE_HOME}/conf/${OE_CONFIG}.conf
+sudo su odoo -c "printf 'admin_passwd = ${OE_SUPERADMIN}\n' >> ${OE_HOME}/conf/${OE_CONFIG}.conf
+sudo su odoo -c "printf 'xmlrpc_port = ${OE_PORT}\n' >> ${OE_HOME}/conf/${OE_CONFIG}.conf
+sudo su odoo -c "printf 'logfile = /var/log/${OE_USER}/${OE_CONFIG}.log\n' >> ${OE_HOME}/conf/${OE_CONFIG}.conf
+sudo su odoo -c "printf 'addons_path = ${OE_ADDONS_PATH}\n' >> ${OE_HOME}/conf/${OE_CONFIG}.conf
 
 sudo chown $OE_USER:$OE_USER ${OE_HOME}/conf/${OE_CONFIG}.conf
 sudo chmod 640 ${OE_HOME}/conf/${OE_CONFIG}.conf
