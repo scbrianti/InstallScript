@@ -152,6 +152,75 @@ sudo git clone --depth 1 --branch $OE_VERSION https://github.com/CybroOdoo/Cybro
 sudo git clone --depth 1 --branch $OE_VERSION https://github.com/odoomates/odooapps.git $OE_EXTRA/odoomates-odooapps/
 sudo git clone --depth 1 --branch $OE_VERSION https://github.com/Smile-SA/odoo_addons.git $OE_EXTRA/smile-sa-odoo_addons/
 sudo git clone --depth 1 --branch $OE_VERSION https://github.com/SythilTech/Odoo.git $OE_EXTRA/sythilech-odoo/
+https://github.com/OCA/business-requirement.git
+https://github.com/OCA/purchase-workflow.git
+https://github.com/OCA/stock-logistics-warehouse.git
+https://github.com/OCA/field-service.git
+https://github.com/OCA/sale-workflow.git
+https://github.com/OCA/stock-logistics-barcode.git
+https://github.com/OCA/account-invoicing.git
+https://github.com/OCA/project.git
+https://github.com/OCA/pos.git
+https://github.com/OCA/reporting-engine.git
+https://github.com/OCA/account-financial-reporting.git
+https://github.com/OCA/hr.git
+https://github.com/OCA/product-attribute.git
+https://github.com/OCA/product-variant.git
+https://github.com/OCA/bank-payment.git
+https://github.com/OCA/timesheet.git
+https://github.com/OCA/search-engine.git
+https://github.com/OCA/mis-builder.git
+https://github.com/OCA/queue.git
+https://github.com/OCA/knowledge.git
+https://github.com/OCA/manufacture-reporting.git
+https://github.com/OCA/data-protection.git
+https://github.com/OCA/stock-logistics-workflow.git
+https://github.com/OCA/account-analytic.git
+https://github.com/OCA/manufacture.git
+https://github.com/OCA/bank-statement-import.git
+https://github.com/OCA/server-ux.git
+https://github.com/OCA/stock-logistics-reporting.git
+https://github.com/OCA/account-financial-tools.git
+https://github.com/OCA/server-backend.git
+https://github.com/OCA/vertical-hotel.git
+https://github.com/OCA/account-invoice-reporting.git
+https://github.com/OCA/account-payment.git
+https://github.com/OCA/donation.git
+https://github.com/OCA/multi-company.git
+https://github.com/OCA/interface-github.git
+https://github.com/OCA/website.git
+https://github.com/OCA/maintenance.git
+https://github.com/OCA/server-env.git
+https://github.com/OCA/geospatial.git
+https://github.com/OCA/commission.git
+https://github.com/OCA/contract.git
+https://github.com/OCA/delivery-carrier.git
+https://github.com/OCA/credit-control.git
+https://github.com/OCA/connector-interfaces.git
+https://github.com/OCA/website-cms.git
+https://github.com/OCA/vertical-association.git
+https://github.com/OCA/event.git
+https://github.com/OCA/sale-reporting.git
+https://github.com/OCA/management-system.git
+https://github.com/OCA/e-commerce.git
+https://github.com/OCA/account-budgeting.git
+https://github.com/OCA/stock-logistics-tracking.git
+https://github.com/OCA/purchase-reporting.git
+https://github.com/OCA/currency.git
+https://github.com/OCA/account-closing.git
+https://github.com/OCA/edi.git
+https://github.com/OCA/rma.git
+https://github.com/OCA/ddmrp.git
+https://github.com/OCA/calendar.git
+https://github.com/OCA/operating-unit.git
+https://github.com/OCA/community-data-files.git
+https://github.com/OCA/intrastat-extrastat.git
+https://github.com/OCA/report-print-send.git
+https://github.com/OCA/project-agile.git
+https://github.com/OCA/margin-analysis.git
+
+
+
 
 echo -e "\n---- Setting permissions on home folder ----"
 sudo chown -R $OE_USER:$OE_USER $OE_HOME/*
