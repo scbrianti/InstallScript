@@ -10,17 +10,18 @@
 ################################################################################
 
 OE_USER="odoo"
-OE_HOME="/$OE_USER"
-OE_HOME_EXT="/$OE_USER/${OE_USER}-server"
+OE_VERSION="12.0"
+OE_HOME="/$OE_USER/$OE_VERSION"
+OE_HOME_EXT="/$OE_HOME/${OE_USER}-server"
 OE_EXTRA="$OE_HOME/extra"
-OE_ADDONS_PATH="$OE_HOME_EXT/addons,$OE_HOME/custom/addons"
+OE_ADDONS_PATH="$OE_HOME_EXT/addons,$OE_HOME_EXT/custom/addons"
 
 INSTALL_WKHTMLTOPDF="True"
 
 # Odoo Port
 OE_PORT="8069"
 # Odoo Version
-OE_VERSION="12.0"
+#OE_VERSION="12.0"
 
 OE_SUPERADMIN="admin"
 OE_CONFIG="${OE_USER}-server"
