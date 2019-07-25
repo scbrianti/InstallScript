@@ -222,11 +222,16 @@ sudo git clone --depth 1 --branch $OE_VERSION https://github.com/OCA/margin-anal
 sudo git clone --depth 1 --branch $OE_VERSION https://github.com/JayVora-SerpentCS/OdooEduERP.git $OE_EXTRA/jayvora-serpentcs-odooeduerp/
 sudo git clone --depth 1 --branch $OE_VERSION https://github.com/JayVora-SerpentCS/Jasperreports_odoo.git $OE_EXTRA/jayvora-serpentcs-jasperreports-odoo/
 sudo git clone --depth 1 --branch $OE_VERSION https://github.com/JayVora-SerpentCS/SerpentCS_Contributions.git $OE_EXTRA/jayvora-serpentcs-serpentcs-contributions/
-sudo git clone --depth 1 --branch $OE_VERSION https://github.com/gmarczynski/odoo-web-progress.git $OE_EXTRA/gmarczynski-odoo-web-progress
-sudo git clone --depth 1 --branch $OE_VERSION https://github.com/crnd-inc/crnd-web.git $OE_EXTRA/crnd-inc-crnd-web
-sudo git clone --depth 1 --branch $OE_VERSION https://github.com/crnd-inc/generic-addons.git $OE_EXTRA/crnd-inc-generic-addons
-sudo git clone --depth 1 --branch $OE_VERSION https://github.com/Openworx/odoo-addons.git $OE_EXTRA/openworx-odoo-addons
-
+sudo git clone --depth 1 --branch $OE_VERSION https://github.com/gmarczynski/odoo-web-progress.git $OE_EXTRA/gmarczynski-odoo-web-progress/
+sudo git clone --depth 1 --branch $OE_VERSION https://github.com/crnd-inc/crnd-web.git $OE_EXTRA/crnd-inc-crnd-web/
+sudo git clone --depth 1 --branch $OE_VERSION https://github.com/crnd-inc/generic-addons.git $OE_EXTRA/crnd-inc-generic-addons/
+sudo git clone --depth 1 --branch $OE_VERSION https://github.com/Openworx/odoo-addons.git $OE_EXTRA/openworx-odoo-addons/
+sudo git clone --depth 1 --branch $OE_VERSION https://github.com/it-projects-llc/website-addons.git $OE_EXTRA/it-projects-llc-website-addons/
+sudo git clone --depth 1 --branch $OE_VERSION https://github.com/it-projects-llc/misc-addons.git $OE_EXTRA/it-projects-llc-misc-addons/
+sudo git clone --depth 1 --branch $OE_VERSION https://github.com/it-projects-llc/mail-addons.git $OE_EXTRA/it-projects-llc-mail-addons/
+sudo git clone --depth 1 --branch $OE_VERSION https://github.com/it-projects-llc/access-addons.git $OE_EXTRA/it-projects-llc-access-addons/
+sudo git clone --depth 1 --branch $OE_VERSION https://gitlab.com/tkopen/tko-addons.git $OE_EXTRA/tkopen-tko-addons/
+sudo git clone --depth 1 --branch $OE_VERSION https://gitlab.com/tkopen/itprojectsllc-odoo-telegram.git $OE_EXTRA/tkopen-itprojectsllc-odoo-telegram/
 
 
 echo -e "\n---- Setting permissions on home folder ----"
